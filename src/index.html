@@ -5,50 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>KISS Kit</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&amp;display=swap" rel="stylesheet">
+  <title>WebAssembly Summit</title>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.min.css">
   <script src="../js/plugins/page.js" async></script>
 </head>
 
-<body class="bg-gray-300">
-  <div class="flex flex-col min-h-screen">
-    <header class="p-4 flex shadow bg-white">
-      <label for="menuToggle" class="sidebar-icon-toggle" aria-label="Toggle Menu" role="button">
-        <img src="../assets/icons/list.svg" alt="" class="h-6 w-6">
-      </label>
-      <input type="checkbox" id="menuToggle">
-      <label for="menuToggle" aria-label="Hide Menu" role="presentation" class="menu-underlay"></label>
-      <a href="/" class="ml-12 md:ml-0">
-        <img src="../assets/icons/refresh.svg" alt="Refresh logo" width="50" height="50">
-      </a>
-      <nav id="sidebarMenu">
-        <label for="menuToggle" class="sidebar-icon-toggle" aria-label="">
-          <img src="../assets/icons/times.svg" alt="" class="h-6 w-6">
-        </label>
-        <ul class="md:flex md:items-center">
-          <li class="block lg:inline-block md:text-black font-bold m-0 md:mx-4 {{ isActive('about') }}">
-            <a href="/about">
-              TENTANG
-            </a>
-          </li>
-          <li class="block lg:inline-block md:text-black font-bold m-0 md:mx-4 {{ isActive('users') }}">
-            <a href="/users">PENGGUNA</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="ml-auto">
-        <a href="/login" class="block lg:inline-block text-black font-bold mt-4">LOGIN</a>
-      </div>
-    </header>
-
-    <main class="flex flex-col flex-auto">
-
-    </main>
-
-    <footer class="p-4 mt-4">
-      <p class="text-black font-bold text-center">&copy; Kiss Kit 2019</p>
-    </footer>  
+<body>
+  <div class="flex items-center justify-center" style="min-height: calc(100vh); background: rgba(0, 0, 0, 0) linear-gradient(rgba(49, 51, 196, 0) 20%, rgb(49, 51, 196) 70%) repeat scroll 0% 0%">
+    <div id="navbar-bottom" class="flex z-1 bg-midnight-blue bg-repeat bg-scroll items-center flex-row justify-start fixed left-0 right-0 bottom-0 overflow-x-scroll overflow-y-hidden shadow-midnight-blue" style="transform: none; transition: 150ms;">
+      
+    </div>
+    <div class="navbar-popup"></div>
+    <div class="pages-container"></div>
   </div>
   <script src="../js/app.js"></script>
 </body>

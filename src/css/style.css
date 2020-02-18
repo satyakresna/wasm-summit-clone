@@ -4,6 +4,15 @@
 
 @tailwind utilities;
 
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0px;
+    background-color: rgb(49, 56, 196);
+    background-image: url("/assets/heightlines.svg");
+    color: white;
+    appearance: none;
+}
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -47,13 +56,6 @@
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
-}
-
-body {
-    font-family: 'Roboto Mono', monospace;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 #sidebarMenu {

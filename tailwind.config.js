@@ -1,6 +1,12 @@
 module.exports = {
   theme: {
-    extend: {}
+    extend: {},
+    zIndex: {
+      '1': 1
+    },
+    backgroundColor: theme => ({
+      'midnight-blue': '#1b1c6f'
+    }),
   },
   variants: {},
   plugins: []
