@@ -9,7 +9,8 @@ module.exports = {
       '1': 1
     },
     backgroundColor: theme => ({
-      'midnight-blue': '#1b1c6f'
+      'midnight-blue': '#1b1c6f',
+      'dark-blue': 'rgb(45, 22, 164)'
     }),
     boxShadow: {
       'midnight-blue': 'rgba(15, 2, 49, 0.35) 0px 5px 5px inset'
