@@ -1,6 +1,10 @@
 module.exports = {
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        'repeat': 'repeat(auto-fill, minmax(100px, 1fr))'
+      }
+    },
     zIndex: {
       '1': 1
     },
