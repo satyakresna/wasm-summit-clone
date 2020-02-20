@@ -117,3 +117,9 @@ a.pages__button:hover {
         display: none;
     }
 }
+
+@media (min-width: 375px) {
+    #navbar-burgerbutton {
+        display: none;
+    }
+}
