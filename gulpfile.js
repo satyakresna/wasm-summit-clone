@@ -54,10 +54,28 @@ gulp.task('js-behaviours', async function () {
     }));
 });
 
+gulp.task('js-components', async function () {
+  gulp.src('./src/js/components/**')
+    .pipe(gulp.dest('./dist/js/components/'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+});
+
+gulp.task('js-pages', async function () {
+  gulp.src('./src/js/pages/**')
+    .pipe(gulp.dest('./dist/js/pages/'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+});
+
 gulp.task('watch', async function () {
   gulp.watch('./src/assets/**', gulp.series('assets'));
   gulp.watch('./src/js/app.js', gulp.series('js'));
   gulp.watch('./src/js/behaviours/**', gulp.series('js-behaviours'));
+  gulp.watch('./src/js/components/**', gulp.series('js-components'));
+  gulp.watch('./src/js/pages/**', gulp.series('js-pages'));
   gulp.watch(['./src/**/*.html'], gulp.series('html', 'css')).on('change', browserSync.reload);
 });
 
@@ -74,7 +92,7 @@ gulp.task('browserSync', function () {
 });
 
 // For production
-gulp.task('build', gulp.series('html', 'css', 'assets', 'js-plugins', 'js-behaviours', 'js'));
+gulp.task('build', gulp.series('html', 'css', 'assets', 'js-plugins', 'js-behaviours', 'js-components', 'js-pages', 'js'));
 
 // For development
 gulp.task('default', gulp.series('build', 'watch', 'browserSync'));
