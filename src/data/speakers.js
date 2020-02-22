@@ -1,10 +1,9 @@
-[
+export default [
   {
     "name": "Lin Clark",
     "picture": "/assets/img/lin-clark.jpg",
     "company": "Mozilla",
     "website": "https://twitter.com/linclark",
-    "talkId": "1",
     "speakerId": "1"
   },
   {
@@ -12,7 +11,6 @@
     "company": "Google",
     "picture": "/assets/img/alon-zakai.jpeg",
     "website": "https://twitter.com/kripken",
-    "talkId": "2",
     "speakerId": "2"
   },
   {
@@ -20,7 +18,6 @@
     "company": "Cloudflare",
     "picture": "/assets/img/ashley-williams.jpg",
     "website": "https://twitter.com/ag_dubs",
-    "talkId": "3",
     "speakerId": "3"
   },
   {
@@ -28,14 +25,12 @@
     "company": "Apple",
     "picture": "/assets/img/tadeu-zagallo.jpg",
     "website": "https://twitter.com/tadeuzagallo",
-    "talkId": "4",
     "speakerId": "4"
   },
   {
     "name": "Peter Salomonsen",
     "picture": "/assets/img/peter-salomonsen.jpg",
     "website": "https://twitter.com/salomonsen_p",
-    "talkId": "5",
     "speakerId": "5"
   },
   {
@@ -43,21 +38,18 @@
     "company": "Wasm SF",
     "picture": "/assets/img/johnathan-beri.jpeg",
     "website": "https://twitter.com/beriberikix",
-    "talkId": "6",
     "speakerId": "6"
   },
   {
     "name": "Kevin Hoffman",
     "picture": "/assets/img/kevin-hoffman.jpeg",
     "website": "https://twitter.com/kevinhoffman",
-    "talkId": "7",
     "speakerId": "7"
   },
   {
     "name": "Brion Vibber",
     "picture": "/assets/img/brion-vibber.jpg",
     "website": "https://twitter.com/brionv",
-    "talkId": "8",
     "speakerId": "8"
   },
   {
@@ -65,7 +57,6 @@
     "company": "Google",
     "picture": "/assets/img/ben-smith.jpg",
     "website": "https://twitter.com/binjimint",
-    "talkId": "9",
     "speakerId": "9"
   }
 ]

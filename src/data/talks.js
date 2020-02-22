@@ -1,4 +1,4 @@
-[
+export default [
   {
     "speakerId": "1",
     "title": "Opening Keynote"
