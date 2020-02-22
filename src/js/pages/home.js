@@ -2,6 +2,7 @@ import renderNavbarBottom from "../components/renderNavbarBottom.js";
 import renderNavbarPopup from "../components/renderNavbarPopup.js";
 
 export default function () {
+  document.body.textContent = '';
   const $content = document.createRange().createContextualFragment(`<div id="page-view" class="flex items-center justify-center" style="min-height: calc(100vh); background: rgba(0, 0, 0, 0) linear-gradient(rgba(49, 51, 196, 0) 20%, rgb(49, 51, 196) 70%) repeat scroll 0% 0%">
   ${renderNavbarBottom()}
   ${renderNavbarPopup()}
