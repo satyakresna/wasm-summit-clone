@@ -70,12 +70,21 @@ gulp.task('js-pages', async function () {
     }));
 });
 
+gulp.task('data', async function () {
+  gulp.src('./src/data/**')
+    .pipe(gulp.dest('./dist/data/'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+})
+
 gulp.task('watch', async function () {
   gulp.watch('./src/assets/**', gulp.series('assets'));
   gulp.watch('./src/js/app.js', gulp.series('js'));
   gulp.watch('./src/js/behaviours/**', gulp.series('js-behaviours'));
   gulp.watch('./src/js/components/**', gulp.series('js-components'));
   gulp.watch('./src/js/pages/**', gulp.series('js-pages'));
+  gulp.watch('./src/data/**', gulp.series('data'));
   gulp.watch(['./src/**/*.html'], gulp.series('html', 'css')).on('change', browserSync.reload);
 });
 
