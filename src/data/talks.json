@@ -11,34 +11,8 @@
   },
   {
     "speakerId": "3",
-    "title":
-      "Why the #wasmsummit Website isn't written in Wasm, and what that means for the future of Wasm",
-    "abstract": "
-        <p>
-          WebAssembly is not here to kill JavaScript. In fact, to be successful,
-          it *must not*. But let me back up.
-        </p>
-
-        <p>
-          WebAssembly is an exciting new technology that has the ambition to
-          change how and what we program for not only the web, but everywhere.
-          In the case of the web platform, WebAssembly's promise has led many to
-          declare that WebAssembly's entrance means the death of JavaScript.
-          This belief is not only reactionary, but deeply short-sighted, and
-          likely to threaten the successful wide-spread adoption of WebAssembly.
-        </p>
-
-        <p>
-          In this talk, we'll use the WebAssembly Summit website to discuss the
-          uses and misuses of WebAssembly on the web. We'll explore the
-          historical and material conditions of the web, past and present, to
-          understand *how* and *why* the web changes and what its current
-          trajectory is. With this understanding, we'll explore how WebAssembly
-          can navigate this unique moment and discuss the practical implications
-          of the specification's growth and better tooling as WebAssembly
-          searches for its place in the web platform and beyond.
-        </p>
-      "
+    "title": "Why the #wasmsummit Website isn't written in Wasm, and what that means for the future of Wasm",
+    "abstract": "WebAssembly is not here to kill JavaScript. In fact, to be successful,it must not. But let me back up.\n WebAssembly is an exciting new technology that has the ambition to change how and what we program for not only the web, but everywhere. In the case of the web platform, WebAssembly's promise has led many to declare that WebAssembly's entrance means the death of JavaScript. This belief is not only reactionary, but deeply short-sighted, and likely to threaten the successful wide-spread adoption of WebAssembly.\n In this talk, we'll use the WebAssembly Summit website to discuss the uses and misuses of WebAssembly on the web. We'll explore the historical and material conditions of the web, past and present, to understand *how* and *why* the web changes and what its current trajectory is. With this understanding, we'll explore how WebAssembly can navigate this unique moment and discuss the practical implications of the specification's growth and better tooling as WebAssembly searches for its place in the web platform and beyond."
   },
   {
     "speakerId": "4",
@@ -67,7 +41,7 @@
   },
   {
     "speakerId": "8",
-    "title": "WebAssembly as a <video> polyfill",
+    "title": "WebAssembly as a video polyfill",
     "abstract":
       "An introduction to Wikipedia's ogv.js media compatibility shim, which uses WebAssembly codecs to provide video file format compatibility for VP9 and AV1 video in browsers that don't play them natively. Will explore the division between the JS and Wasm parts of the code base, and how advances in emscripten and LLVM create opportunities and challenges for performance as different browsers implement different levels of the spec (threading, SIMD, etc)."
   },
