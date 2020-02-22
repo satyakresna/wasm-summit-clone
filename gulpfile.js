@@ -51,6 +51,7 @@ gulp.task('watch', async function () {
   gulp.watch('./src/js/**', gulp.series('js'));
   gulp.watch('./src/data/**', gulp.series('data'));
   gulp.watch(['./src/**/*.html'], gulp.series('html', 'css')).on('change', browserSync.reload);
+  gulp.watch('./src/css/style.css', gulp.series('css')).on('change', browserSync.reload);
 });
 
 gulp.task('browserSync', function () {
@@ -61,8 +62,6 @@ gulp.task('browserSync', function () {
       middleware: [ historyApiFallback() ]
     }
   });
-
-  gulp.watch('./src/css/style.css', gulp.series('css')).on('change', browserSync.reload);
 });
 
 // For production
