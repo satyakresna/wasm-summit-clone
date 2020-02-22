@@ -123,3 +123,7 @@ a.pages__button:hover {
         display: none;
     }
 }
+
+.speaker-card:hover {
+    transform: scale(1.02);
+}
