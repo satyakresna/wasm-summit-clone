@@ -30,14 +30,6 @@ gulp.task('assets', async function () {
     }))
 });
 
-gulp.task('js-plugins', async function () {
-  gulp.src('./src/js/plugins/**')
-    .pipe(gulp.dest('./dist/js/plugins/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
-});
-
 gulp.task('js', async function () {
   gulp.src('./src/js/**')
     .pipe(gulp.dest('./dist/js/'))
