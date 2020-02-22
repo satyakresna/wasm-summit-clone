@@ -66,7 +66,7 @@ gulp.task('browserSync', function () {
 });
 
 // For production
-gulp.task('build', gulp.series('html', 'css', 'assets', 'js'));
+gulp.task('build', gulp.series('html', 'css', 'assets', 'js', 'data'));
 
 // For development
 gulp.task('default', gulp.series('build', 'watch', 'browserSync'));
