@@ -1,6 +1,10 @@
 module.exports = {
   theme: {
     extend: {
+      width: {
+        '390px': '390px',
+        '310px': '310px'
+      },
       gridTemplateColumns: {
         'repeat': 'repeat(auto-fill, minmax(100px, 1fr))'
       }
