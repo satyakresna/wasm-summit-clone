@@ -63,5 +63,5 @@ export default function () {
         ${$div.outerHTML}
       `);
       document.body.appendChild($content);
-  }, 150);
+  }, 500);
 }
