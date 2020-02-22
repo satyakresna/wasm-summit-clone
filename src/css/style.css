@@ -124,6 +124,18 @@ a.pages__button:hover {
     }
 }
 
+#speakers {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+    gap: 70px 1vw;
+}
+
+@media (max-width: 1280px) {
+    #speakers {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2vw;
+    }
+}
+
 .speaker-card:hover {
     transform: scale(1.02);
 }
