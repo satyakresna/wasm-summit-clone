@@ -89,7 +89,7 @@ a.pages__button:hover {
 
 @media (max-width: 749px) {
     #navbar-bottom {
-        box-shadow: 'rgba(15, 2, 49, 0.2) 0px 5px 5px inset';
+        box-shadow: rgba(15, 2, 49, 0.2) 0px 5px 5px inset;
         justify-content: center;
     }
 }
