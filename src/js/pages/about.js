@@ -11,7 +11,7 @@ export default function () {
   for (const faq of about) {
     const $content = document.createRange().createContextualFragment(`
       <h2 class="text-3xl font-bold py-15px pr-15px pl-5px border-b-3 border-solid" style="border-bottom-color: rgba(255, 255, 255, 0.4);">${faq.question}</h2>
-      <p class="text-xl mt-25px px-15px pb-50px leading-relaxed" style="text-shadow: rgba(0, 0, 0, 0.25) 1px 4px 10px;">${faq.answer}</p>
+      <p class="text-lg mt-25px px-15px pb-50px leading-relaxed" style="text-shadow: rgba(0, 0, 0, 0.25) 1px 4px 10px;">${faq.answer}</p>
     `);
     fragment.appendChild($content);
   }
