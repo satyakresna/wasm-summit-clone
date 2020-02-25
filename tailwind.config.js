@@ -5,9 +5,13 @@ module.exports = {
       '10px': '10px',
       '15px': '15px',
       '16px': '16px',
+      '25px': '25px',
       '60px': '60px',
       '390px': '390px',
       '310px': '310px'
+    },
+    borderWidth: {
+      '3': '3px'
     },
     extend: {
       gridTemplateColumns: {
