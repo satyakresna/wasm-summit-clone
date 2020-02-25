@@ -11,6 +11,7 @@ module.exports = {
       '310px': '310px'
     },
     borderWidth: {
+      '2': '2px',
       '3': '3px'
     },
     extend: {
