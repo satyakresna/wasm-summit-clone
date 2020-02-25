@@ -21,5 +21,16 @@ document.onreadystatechange = function () {
     scrollContent();
 
     clickHamburgerMenu();
+
+    var current = window.location.pathname.replace('/', '');
+    const links = document.querySelectorAll('div#navbar-navitems > a');
+    
+    for (let index = 0; index < links.length; index++) {
+      const element = links[index];
+      const href = element.getAttribute('href').replace('/', '');
+      if (href.includes(current)) {
+        element.querySelector('.navbar-button').classList.add('active');
+      }
+    }
   }
 }
