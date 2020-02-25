@@ -3,7 +3,7 @@ import renderNavbarPopup from "../components/renderNavbarPopup.js";
 import speakers from "../../data/speakers.js";
 import talks from "../../data/talks.js";
 
-export default function () {
+export default function (ctx) {
   document.body.textContent = '';
   const $div = document.createElement('div');
   $div.setAttribute('id', 'speakers');
@@ -35,4 +35,8 @@ export default function () {
         ${$div.outerHTML}
       `);
   document.body.appendChild($content);
+
+  if (document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`) !== null) {
+    document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`).classList.add('active'); 
+  }
 }

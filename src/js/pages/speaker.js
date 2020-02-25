@@ -50,4 +50,8 @@ export default function (ctx) {
     </div>
   `);
   document.body.appendChild($content);
+
+  if (document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`) !== null) {
+    document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`).classList.add('active'); 
+  }
 }

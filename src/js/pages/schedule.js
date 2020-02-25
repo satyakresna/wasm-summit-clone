@@ -2,7 +2,7 @@ import renderNavbarBottom from "../components/renderNavbarBottom.js";
 import renderNavbarPopup from "../components/renderNavbarPopup.js";
 import schedule from "../../data/schedule.js";
 
-export default function () {
+export default function (ctx) {
   document.body.textContent = '';
   const $ul = document.createElement('ul');
   $ul.setAttribute('class', 'schedule mx-auto list-none p-0');
@@ -38,4 +38,8 @@ export default function () {
     </div>
   `);
   document.body.appendChild($content);
+
+  if (document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`) !== null) {
+    document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`).classList.add('active'); 
+  }
 }
