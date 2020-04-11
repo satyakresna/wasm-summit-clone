@@ -1,3 +1,4 @@
+import page from "./plugins/page.mjs";
 import scrollContent from "./behaviours/scrollContent.js";
 import clickHamburgerMenu from "./behaviours/clickHamburgerMenu.js";
 import Home from "./pages/home.js";
