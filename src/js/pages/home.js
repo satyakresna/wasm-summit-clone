@@ -1,11 +1,11 @@
-import renderNavbarBottom from "../components/renderNavbarBottom.js";
-import renderNavbarPopup from "../components/renderNavbarPopup.js";
+import NavbarBottom from "../components/NavbarBottom.js";
+import NavbarPopup from "../components/NavbarPopup.js";
 
 export default function () {
   document.body.textContent = '';
   const $content = document.createRange().createContextualFragment(`<div id="page-view" class="flex items-center justify-center" style="min-height: calc(100vh); background: rgba(0, 0, 0, 0) linear-gradient(rgba(49, 51, 196, 0) 20%, rgb(49, 51, 196) 70%) repeat scroll 0% 0%">
-  ${renderNavbarBottom()}
-  ${renderNavbarPopup()}
+  ${NavbarBottom()}
+  ${NavbarPopup()}
   <div id="pages-container" class="flex flex-col justify-center items-center p-0" style="margin-top: 3vw; margin-bottom: 60px;">
     <div id="pages-hero" class="grid items-end content-center">
       <img id="pages-logo" src="/assets/summit-logo.svg" alt="WebAssembly Summit Logo" class="max-w-full" style="width: 1280px;">

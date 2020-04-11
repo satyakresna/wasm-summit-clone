@@ -1,5 +1,5 @@
-import renderNavbarBottom from "../components/renderNavbarBottom.js";
-import renderNavbarPopup from "../components/renderNavbarPopup.js";
+import NavbarBottom from "../components/NavbarBottom.js";
+import NavbarPopup from "../components/NavbarPopup.js";
 import speakers from "../../data/speakers.js";
 import talks from "../../data/talks.js";
 
@@ -30,8 +30,8 @@ export default function (ctx) {
   $div.appendChild(fragment);
   const $content = document.createRange().createContextualFragment(`
         <div id="speakers-background" class="flex fixed inset-0" style="background-color: rgba(122, 122, 122, 0.15); z-index: -1;"></div>
-        ${renderNavbarBottom()}
-        ${renderNavbarPopup()}
+        ${NavbarBottom()}
+        ${NavbarPopup()}
         ${$div.outerHTML}
       `);
   document.body.appendChild($content);
