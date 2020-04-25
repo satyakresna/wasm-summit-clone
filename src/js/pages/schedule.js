@@ -1,6 +1,6 @@
 import NavbarBottom from "../components/NavbarBottom.js";
 import NavbarPopup from "../components/NavbarPopup.js";
-import schedule from "../../data/schedule.js";
+import schedule from "../data/schedule.js";
 
 export default function (ctx) {
   document.body.textContent = '';

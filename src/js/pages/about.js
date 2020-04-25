@@ -1,6 +1,6 @@
 import NavbarBottom from "../components/NavbarBottom.js";
 import NavbarPopup from "../components/NavbarPopup.js";
-import about from "../../data/about.js";
+import about from "../data/about.js";
 
 export default function (ctx) {
   document.body.textContent = '';

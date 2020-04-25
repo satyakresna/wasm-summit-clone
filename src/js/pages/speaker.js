@@ -1,7 +1,7 @@
 import NavbarBottom from "../components/NavbarBottom.js";
 import NavbarPopup from "../components/NavbarPopup.js";
-import speakers from "../../data/speakers.js";
-import talks from "../../data/talks.js";
+import speakers from "../data/speakers.js";
+import talks from "../data/talks.js";
 
 export default function (ctx) {
   let selectedSpeaker;
