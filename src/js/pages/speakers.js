@@ -30,9 +30,9 @@ export default function (ctx) {
   $div.appendChild(fragment);
   const $content = document.createRange().createContextualFragment(`
         <div id="speakers-background" class="flex fixed inset-0" style="background-color: rgba(122, 122, 122, 0.15); z-index: -1;"></div>
+        ${$div.outerHTML}
         ${NavbarBottom()}
         ${NavbarPopup()}
-        ${$div.outerHTML}
       `);
   document.body.appendChild($content);
 

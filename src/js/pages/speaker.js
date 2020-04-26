@@ -19,8 +19,6 @@ export default function (ctx) {
   document.body.textContent = '';
   const $content = document.createRange().createContextualFragment(`
     <div class="flex fixed inset-0" style="z-index: -1; padding: 25px; background-color: rgba(122, 122, 122, 0.15);"></div>
-    ${NavbarBottom()}
-    ${NavbarPopup()}
     <div class="flex flex-row" style="padding: 3vh 3vw; color: white; min-height: calc(-65px + 100vh); align-items: center; justify-content: center;">
       <div class="flex flex-row flex-wrap" style="justify-content: center; align-items: flex-start;">
         <div id="speaker-box" class="flex flex-col" style="margin-top: 0vh; margin-bottom: 2vh; margin-right: 0px; padding-top: 0px;">
@@ -48,7 +46,8 @@ export default function (ctx) {
         </div>
       </div>
     </div>
-  `);
+    ${NavbarBottom()}
+    ${NavbarPopup()}`);
   document.body.appendChild($content);
 
   if (document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`) !== null) {

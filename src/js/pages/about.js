@@ -19,15 +19,14 @@ export default function (ctx) {
 
   const $content = document.createRange().createContextualFragment(`
     <div class="flex fixed inset-0" style="background-color: rgba(122, 122, 122, 0.15); z-index: -1;"></div>
-    ${NavbarBottom()}
-    ${NavbarPopup()}
     <div style="padding: 3vh 9vw">
       <h1 class="text-5xl font-bold p-10px" style="margin-top: 3vh; margin-bottom: 0vh;">About</h1>
       <div style="columns: 500px auto; column-gap: 10vw;">
         ${$faq.outerHTML}
       </div>
     </div>
-  `);
+    ${NavbarBottom()}
+    ${NavbarPopup()}`);
   document.body.appendChild($content);
 
   if (document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`) !== null) {

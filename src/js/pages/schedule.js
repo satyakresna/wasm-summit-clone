@@ -30,13 +30,12 @@ export default function (ctx) {
   $ul.appendChild(fragment);
   const $content = document.createRange().createContextualFragment(`
     <div id="schedule-background" class="flex fixed inset-0" style="background-color: rgba(122, 122, 122, 0.15); z-index: -1;"></div>
-    ${NavbarBottom()}
-    ${NavbarPopup()}
     <div id="schedule" style="padding: 3vh 9vw;">
       <h1 class="text-center text-5xl" style="margin-top: 3vh; margin-bottom: 0vh;"><strong>Schedule</strong></h1>
       ${$ul.outerHTML}
     </div>
-  `);
+    ${NavbarBottom()}
+    ${NavbarPopup()}`);
   document.body.appendChild($content);
 
   if (document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`) !== null) {
