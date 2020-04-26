@@ -1,4 +1,5 @@
 import schedule from "../data/schedule.js";
+import setActiveMenu from "../behaviours/setActiveMenu.js";
 
 export default function (ctx) {
   document.querySelector('main').textContent = '';
@@ -34,7 +35,5 @@ export default function (ctx) {
     </div>`);
   document.querySelector('main').appendChild($content);
 
-  if (document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`) !== null) {
-    document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`).classList.add('active'); 
-  }
+  setActiveMenu(ctx.path);
 }

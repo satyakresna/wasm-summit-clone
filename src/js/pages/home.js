@@ -1,4 +1,6 @@
-export default function () {
+import setActiveMenu from "../behaviours/setActiveMenu.js";
+
+export default function (ctx) {
   document.querySelector('main').textContent = '';
   const $content = document.createRange().createContextualFragment(`<div id="page-view" class="flex items-center justify-center" style="min-height: calc(100vh); background: rgba(0, 0, 0, 0) linear-gradient(rgba(49, 51, 196, 0) 20%, rgb(49, 51, 196) 70%) repeat scroll 0% 0%">
   <div id="pages-container" class="flex flex-col justify-center items-center p-0" style="margin-top: 3vw; margin-bottom: 60px;">
@@ -32,4 +34,6 @@ export default function () {
   </div>
 </div>`);
   document.querySelector('main').appendChild($content);
+
+  setActiveMenu(ctx.path);
 }

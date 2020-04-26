@@ -1,5 +1,6 @@
 import speakers from "../data/speakers.js";
 import talks from "../data/talks.js";
+import setActiveMenu from "../behaviours/setActiveMenu.js";
 
 export default function (ctx) {
   let selectedSpeaker;
@@ -46,7 +47,5 @@ export default function (ctx) {
     </div>`);
   document.querySelector('main').appendChild($content);
 
-  if (document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`) !== null) {
-    document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`).classList.add('active'); 
-  }
+  setActiveMenu(ctx.path);
 }
