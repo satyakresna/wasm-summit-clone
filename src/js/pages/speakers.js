@@ -1,10 +1,8 @@
-import NavbarBottom from "../components/NavbarBottom.js";
-import NavbarPopup from "../components/NavbarPopup.js";
 import speakers from "../data/speakers.js";
 import talks from "../data/talks.js";
 
 export default function (ctx) {
-  document.body.textContent = '';
+  document.querySelector('main').textContent = '';
   const $div = document.createElement('div');
   $div.setAttribute('id', 'speakers');
   $div.setAttribute('class', 'grid');
@@ -31,10 +29,8 @@ export default function (ctx) {
   const $content = document.createRange().createContextualFragment(`
         <div id="speakers-background" class="flex fixed inset-0" style="background-color: rgba(122, 122, 122, 0.15); z-index: -1;"></div>
         ${$div.outerHTML}
-        ${NavbarBottom()}
-        ${NavbarPopup()}
       `);
-  document.body.appendChild($content);
+  document.querySelector('main').appendChild($content);
 
   if (document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`) !== null) {
     document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`).classList.add('active'); 

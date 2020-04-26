@@ -1,9 +1,7 @@
-import NavbarBottom from "../components/NavbarBottom.js";
-import NavbarPopup from "../components/NavbarPopup.js";
 import about from "../data/about.js";
 
 export default function (ctx) {
-  document.body.textContent = '';
+  document.querySelector('main').textContent = '';
 
   const $faq = document.createElement('div');
   $faq.setAttribute('style', 'break-inside: avoid;');
@@ -24,10 +22,8 @@ export default function (ctx) {
       <div style="columns: 500px auto; column-gap: 10vw;">
         ${$faq.outerHTML}
       </div>
-    </div>
-    ${NavbarBottom()}
-    ${NavbarPopup()}`);
-  document.body.appendChild($content);
+    </div>`);
+  document.querySelector('main').appendChild($content);
 
   if (document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`) !== null) {
     document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`).classList.add('active'); 

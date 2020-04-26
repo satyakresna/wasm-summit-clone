@@ -1,5 +1,3 @@
-import NavbarBottom from "../components/NavbarBottom.js";
-import NavbarPopup from "../components/NavbarPopup.js";
 import speakers from "../data/speakers.js";
 import talks from "../data/talks.js";
 
@@ -16,7 +14,7 @@ export default function (ctx) {
       selectedTalk = talk;
     }
   }
-  document.body.textContent = '';
+  document.querySelector('main').textContent = '';
   const $content = document.createRange().createContextualFragment(`
     <div class="flex fixed inset-0" style="z-index: -1; padding: 25px; background-color: rgba(122, 122, 122, 0.15);"></div>
     <div class="flex flex-row" style="padding: 3vh 3vw; color: white; min-height: calc(-65px + 100vh); align-items: center; justify-content: center;">
@@ -45,10 +43,8 @@ export default function (ctx) {
           `<p style="font-size: 1.2em; margin: 0px; padding: 15px 15px 50px 25px; line-height: 1.8; color: rgba(255, 255, 255, 0.9); text-shadow: rgba(0, 0, 0, 0.25) 1px 4px 10px; font-weight: normal;">${selectedTalk.abstract}</p>` : ''}
         </div>
       </div>
-    </div>
-    ${NavbarBottom()}
-    ${NavbarPopup()}`);
-  document.body.appendChild($content);
+    </div>`);
+  document.querySelector('main').appendChild($content);
 
   if (document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`) !== null) {
     document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`).classList.add('active'); 

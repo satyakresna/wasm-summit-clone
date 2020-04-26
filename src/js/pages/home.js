@@ -1,8 +1,5 @@
-import NavbarBottom from "../components/NavbarBottom.js";
-import NavbarPopup from "../components/NavbarPopup.js";
-
 export default function () {
-  document.body.textContent = '';
+  document.querySelector('main').textContent = '';
   const $content = document.createRange().createContextualFragment(`<div id="page-view" class="flex items-center justify-center" style="min-height: calc(100vh); background: rgba(0, 0, 0, 0) linear-gradient(rgba(49, 51, 196, 0) 20%, rgb(49, 51, 196) 70%) repeat scroll 0% 0%">
   <div id="pages-container" class="flex flex-col justify-center items-center p-0" style="margin-top: 3vw; margin-bottom: 60px;">
     <div id="pages-hero" class="grid items-end content-center">
@@ -33,8 +30,6 @@ export default function () {
       <a href="#" class="pages__button text-2xl bg-dark-blue bg-repeat bg-scroll rounded inline-block" style="color: white; transition: all 0.1s ease 0s; box-shadow: rgba(0, 0, 0, 0.2) 2px 4px 10px;">See the photos</a>
     </div>
   </div>
-</div>
-${NavbarBottom()}
-  ${NavbarPopup()}`);
-  document.body.appendChild($content);
+</div>`);
+  document.querySelector('main').appendChild($content);
 }

@@ -1,9 +1,7 @@
-import NavbarBottom from "../components/NavbarBottom.js";
-import NavbarPopup from "../components/NavbarPopup.js";
 import schedule from "../data/schedule.js";
 
 export default function (ctx) {
-  document.body.textContent = '';
+  document.querySelector('main').textContent = '';
   const $ul = document.createElement('ul');
   $ul.setAttribute('class', 'schedule mx-auto list-none p-0');
   $ul.setAttribute('style', 'margin-top: 25px; max-width: 900px;');
@@ -33,10 +31,8 @@ export default function (ctx) {
     <div id="schedule" style="padding: 3vh 9vw;">
       <h1 class="text-center text-5xl" style="margin-top: 3vh; margin-bottom: 0vh;"><strong>Schedule</strong></h1>
       ${$ul.outerHTML}
-    </div>
-    ${NavbarBottom()}
-    ${NavbarPopup()}`);
-  document.body.appendChild($content);
+    </div>`);
+  document.querySelector('main').appendChild($content);
 
   if (document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`) !== null) {
     document.querySelector(`div#navbar-navitems > a[href="${ctx.path}"] > .navbar-button`).classList.add('active'); 
