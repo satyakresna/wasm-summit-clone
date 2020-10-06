@@ -1,4 +1,12 @@
 module.exports = {
+  purge: {
+    mode: 'all',
+    content: [
+      './src/**/*.html',
+      './src/*.html',
+      './src/js/**/*.js',
+    ]
+  },
   theme: {
     spacing: {
       '5px': '5px',
