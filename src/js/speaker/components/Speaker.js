@@ -1,5 +1,5 @@
-import speakers from "../data/speakers.js";
-import talks from "../data/talks.js";
+import speakers from "../../speakers/data/speakers.js";
+import talks from "../../speakers/data/talks.js";
 
 export default function (ctx) {
     let selectedSpeaker;

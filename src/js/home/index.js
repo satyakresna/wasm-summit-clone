@@ -1,4 +1,4 @@
-import setActiveMenu from "../behaviours/setActiveMenu.js";
+import setActiveMenu from "../utils/setActiveMenu.js";
 
 export default function (ctx) {
   document.querySelector('main').textContent = '';
