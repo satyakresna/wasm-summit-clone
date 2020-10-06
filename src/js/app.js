@@ -1,12 +1,12 @@
 import page from "page";
-import scrollContent from "./behaviours/scrollContent.js";
-import clickHamburgerMenu from "./behaviours/clickHamburgerMenu.js";
-import Home from "./pages/home.js";
-import Speakers from "./pages/speakers.js";
-import Speaker from "./pages/speaker.js";
-import Schedules from "./pages/schedules.js";
-import About from "./pages/about.js";
-import NotFound from "./pages/notfound.js";
+import scrollContent from "./utils/scrollContent.js";
+import clickHamburgerMenu from "./utils/clickHamburgerMenu.js";
+import Home from "./home/index.js";
+import Speakers from "./speakers/index.js";
+import Speaker from "./speaker/index.js";
+import Schedules from "./schedules/index.js";
+import About from "./about/index.js";
+import NotFound from "./notfound.js";
 
 document.onreadystatechange = function () {
   if (document.readyState === 'complete') {
