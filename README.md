@@ -8,7 +8,4 @@ Clone [Web Assembly Summit site](https://webassembly-summit.org/). The purpose i
 
 ## Stack
 
-- HTML, CSS, JS
-- [Gulp](https://gulpjs.com/)
-- [Tailwind](https://tailwindcss.com/)
-- [Page.js](https://github.com/visionmedia/page.js)
+[Kiss kit](https://github.com/satyakresna/kiss-kit)
